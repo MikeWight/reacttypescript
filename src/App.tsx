@@ -1,27 +1,12 @@
 import React from "react";
+import "./App.css";
 
-let name: any;
-let age: number | string;
-let isStudent: boolean;
-let hobbies: string[];
-let role: [number, string];
-
-type Person = {
-	name: string;
-	age?: number;
+const App: React.FC = () => {
+	return (
+		<div className="App">
+			<span className="heading">Taskify</span>
+		</div>
+	);
 };
-
-let person: Person = {
-	name: "Hey",
-};
-
-let printName: (name: string) => void;
-
-let persons: Person[] = new Array();
-persons.push(person);
-
-function App() {
-	return <div className="App">Hello World</div>;
-}
 
 export default App;
